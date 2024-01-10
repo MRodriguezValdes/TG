@@ -27,7 +27,7 @@ public class LC extends JFrame implements ActionListener, EventListener {
         this.configuringUI();
     }
 
-    public void collideManagement(ArrayList<VO> objectsCollide){
+    public synchronized void collideManagement(ArrayList<VO> objectsCollide){
         TGR.takeDecision(objectsCollide,this);
     }
     public void addBall(int x ,int y){
@@ -42,12 +42,8 @@ public class LC extends JFrame implements ActionListener, EventListener {
         c.gridy = 0;
         c.fill = GridBagConstraints.HORIZONTAL;
         c.weightx = 1;
-        c.weighty = 0;
+        c.weighty = 1;
         c.insets = new Insets(10, 10, 10, 10);
-
-        this.add(jbPlay, c);
-        c.gridy++;
-        c.weighty++;
         this.add(this.view, c);
 
 

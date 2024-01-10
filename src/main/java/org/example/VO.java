@@ -7,7 +7,7 @@ public interface VO {
 
     void move();
 
-    Coordinate getPosition();
+    BoundingBox getBoundingBox();
 
     void bounce();
 

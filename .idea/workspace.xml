@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9d6b34-94e5-4351-9301-2caedcbf460b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Ball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TGPCT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TGR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/VO.java" afterDir="false" />
+    <list default="true" id="0d9d6b34-94e5-4351-9301-2caedcbf460b" name="Changes" comment="Funciona">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BoundingBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TGR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TGR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +64,17 @@
       <workItem from="1704725865464" duration="2082000" />
       <workItem from="1704801478863" duration="1739000" />
       <workItem from="1704803306552" duration="19168000" />
-      <workItem from="1704878284936" duration="7429000" />
+      <workItem from="1704878284936" duration="14278000" />
     </task>
+    <task id="LOCAL-00001" summary="Funciona">
+      <option name="closed" value="true" />
+      <created>1704885746522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704885746522</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +90,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Funciona" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funciona" />
   </component>
 </project>

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class TGR {
-    Random random = new Random();
-    public static void takeDecision(ArrayList<VO> objectsCollide,LC controller) {
+    public static void takeDecision(ArrayList<VO> objectsCollide, LC controller) {
+
         for (int i = 0; i < objectsCollide.size() - 1; i += 2) {
             VO object1 = objectsCollide.get(i);
             VO object2 = objectsCollide.get(i + 1);
@@ -16,7 +16,6 @@ public class TGR {
 
                 ball1.bounce();
                 ball2.kill();
-
                 controller.model.objects.remove(ball2);
             }
         }

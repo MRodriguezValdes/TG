@@ -1,5 +1,6 @@
 package org.example;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -25,60 +26,33 @@ public class LM {
         new Thread(ball).start();
     }
 
-    public void collideDetection(Ball ball , Coordinate newPosition) {
-        ArrayList<VO> objectsCollide;
-
-
-//      Comprobar colision con entre objetos
-        objectsCollide = findCollisions( ball ,ball.radio);
+    public void collideDetection(Ball ball, Coordinate newPosition) {
+        ArrayList<VO> objectsCollide= findCollisions(ball);
 
 //      Si no hay colision , seteamos la posision
-        if(objectsCollide.size()== 0 ){
+        if (objectsCollide.size() == 0) {
             ball.position = newPosition;
 
-        }else {
+        } else {
 //      Y si hay colision lo enviamos al collideManagement
             this.controller.collideManagement(objectsCollide);
             objectsCollide.clear();
         }
 
-
-
-
-
-        if (ball.position.x < 0) {
-            ball.bounce();
-            ball.position.x = ball.radio;
-        } else if (ball.position.x > this.controller.view.getWidth() - ball.radio) {
-            ball.bounce();
-            ball.position.x = this.controller.view.getWidth() - ball.radio;
-        }
-
-        if (ball.position.y > this.controller.view.getHeight() - ball.radio) {
-            ball.bounce();
-            ball.position.y = this.controller.view.getHeight() - ball.radio;
-        } else if (ball.position.y < 0) {
-            ball.bounce();
-            ball.position.y = ball.radio;
-        }
-
-
+        checkWallCollision(ball);
     }
 
-    private ArrayList<VO> findCollisions(VO vObject, int ballRadio) {
+    private ArrayList<VO> findCollisions(VO vObject) {
         ArrayList<VO> objectsCollide = new ArrayList<>();
+        BoundingBox vObjectBoundingBox = vObject.getBoundingBox();
 
         for (VO otherObject : objects) {
             if (otherObject != vObject) {
-                double distance = Math.sqrt(
-                        Math.pow((vObject.getPosition().x - otherObject.getPosition().x), 2) +
-                                Math.pow((vObject.getPosition().y - otherObject.getPosition().y), 2)
-                );
-                double totalRadius = ballRadio * 2;
+                BoundingBox otherObjectBoundingBox = otherObject.getBoundingBox();
 
-                if (distance < totalRadius) {
-                    objectsCollide.add(otherObject);
+                if (vObjectBoundingBox.intersects(otherObjectBoundingBox)) {
                     objectsCollide.add(vObject);
+                    objectsCollide.add(otherObject);
                 }
             }
         }
@@ -86,4 +60,21 @@ public class LM {
         return objectsCollide;
     }
 
+    private void checkWallCollision(Ball ball) {
+        if (ball.position.x < ball.radius) {
+            ball.bounce();
+            ball.position.x = ball.radius;
+        } else if (ball.position.x > controller.view.getWidth() - ball.radius) {
+            ball.bounce();
+            ball.position.x = controller.view.getWidth() - ball.radius;
+        }
+
+        if (ball.position.y > controller.view.getHeight() - ball.radius) {
+            ball.bounce();
+            ball.position.y = controller.view.getHeight() - ball.radius;
+        } else if (ball.position.y < ball.radius) {
+            ball.bounce();
+            ball.position.y = ball.radius;
+        }
+    }
 }
