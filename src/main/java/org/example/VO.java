@@ -9,6 +9,8 @@ public interface VO {
 
     BoundingBox getBoundingBox();
 
+    boolean isAlive();
+
     void bounce();
 
     void kill();

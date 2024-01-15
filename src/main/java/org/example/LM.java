@@ -2,21 +2,25 @@ package org.example;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class LM {
-    ArrayList<VO> objects;
-
+    List<VO> objects;
     LC controller;
     Random random = new Random();
 
 
+
+
     public LM(LC controller) {
         this.controller = controller;
-        this.objects = new ArrayList<>();
+        this.objects = Collections.synchronizedList(new ArrayList<>());
     }
 
-    public ArrayList<VO> getObjects() {
+    public List<VO> getObjects() {
         return objects;
     }
 

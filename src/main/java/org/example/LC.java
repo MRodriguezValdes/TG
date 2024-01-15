@@ -6,11 +6,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.EventListener;
+import java.util.List;
 
 public class LC extends JFrame implements ActionListener, EventListener {
 
     TGPCT generalController;
-
+    TGR rules;
     LV view;
 
     LM model;
@@ -20,6 +21,7 @@ public class LC extends JFrame implements ActionListener, EventListener {
     public LC(String title, TGPCT generalController) throws HeadlessException {
         super(title);
         this.generalController = generalController;
+        this.rules= new TGR();
         this.jbPlay = new JToggleButton("Play");
         this.jbPlay.setSelected(true);
         this.model = new LM(this);
@@ -27,8 +29,8 @@ public class LC extends JFrame implements ActionListener, EventListener {
         this.configuringUI();
     }
 
-    public synchronized void collideManagement(ArrayList<VO> objectsCollide){
-        TGR.takeDecision(objectsCollide,this);
+    public void collideManagement(List<VO> objectsCollide){
+        rules.takeDecision(objectsCollide);
     }
     public void addBall(int x ,int y){
         this.model.addBall(x,y);

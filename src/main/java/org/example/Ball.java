@@ -8,7 +8,7 @@
         public final int[] moveX = {-1, 1, 0, 0, -1, -1, 1, 1};
         public final int[] moveY = {0, 0, -1, 1, 1, -1, 1, -1};
         public Coordinate position;
-        int radius = 10;
+        int radius = 20;
         boolean isAlive;
         private int direction;
         private int velocity = 5;
@@ -33,6 +33,11 @@
 
         public void setDirection(int direction) {
             this.direction = direction;
+        }
+
+        @Override
+        public boolean isAlive() {
+            return isAlive;
         }
 
         public void nextMovement() {

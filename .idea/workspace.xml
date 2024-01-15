@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9d6b34-94e5-4351-9301-2caedcbf460b" name="Changes" comment="Funciona">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BoundingBox.java" afterDir="false" />
+    <list default="true" id="0d9d6b34-94e5-4351-9301-2caedcbf460b" name="Changes" comment="limitando objetos a rectangulos con BoundingBox.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BoundingBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BoundingBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TGR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TGR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VO.java" afterDir="false" />
     </list>
@@ -26,6 +27,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -53,6 +60,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-abbd5a8d" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +78,9 @@
       <workItem from="1704725865464" duration="2082000" />
       <workItem from="1704801478863" duration="1739000" />
       <workItem from="1704803306552" duration="19168000" />
-      <workItem from="1704878284936" duration="14278000" />
+      <workItem from="1704878284936" duration="14599000" />
+      <workItem from="1704907123201" duration="2594000" />
+      <workItem from="1705312310363" duration="2491000" />
     </task>
     <task id="LOCAL-00001" summary="Funciona">
       <option name="closed" value="true" />
@@ -74,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704885746522</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="limitando objetos a rectangulos con BoundingBox.java">
+      <option name="closed" value="true" />
+      <created>1704892856627</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704892856627</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Funciona" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funciona" />
+    <MESSAGE value="limitando objetos a rectangulos con BoundingBox.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="limitando objetos a rectangulos con BoundingBox.java" />
   </component>
 </project>

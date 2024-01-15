@@ -1,10 +1,15 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class TGR {
-    public static void takeDecision(ArrayList<VO> objectsCollide, LC controller) {
+    public TGR() {
+
+    }
+
+    public void takeDecision(List<VO> objectsCollide) {
 
         for (int i = 0; i < objectsCollide.size() - 1; i += 2) {
             VO object1 = objectsCollide.get(i);
@@ -16,7 +21,6 @@ public class TGR {
 
                 ball1.bounce();
                 ball2.kill();
-                controller.model.objects.remove(ball2);
             }
         }
     }
