@@ -16,6 +16,8 @@ public class TGR {
             ball2.kill();
         });
 
+
+
     }
 
     public void takeDecision(List<VO> objectsCollide) {
@@ -31,8 +33,8 @@ public class TGR {
     }
 
     private void addRule(Class<?> class1, Class<?> class2, CollisionRule rule) {
-        ruleMap.getOrDefault(class1, new HashMap<>()).put(class2, rule);
-        ruleMap.getOrDefault(class2, new HashMap<>()).put(class1, rule); // Para permitir bidireccionalidad
+        ruleMap.computeIfAbsent(class1, k->new HashMap<>()).put(class2, rule);
+        ruleMap.computeIfAbsent(class2, k->new HashMap<>()).put(class1, rule); // Para permitir bidireccionalidad
     }
 
 }
