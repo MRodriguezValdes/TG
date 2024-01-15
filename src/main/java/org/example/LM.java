@@ -13,8 +13,6 @@ public class LM {
     Random random = new Random();
 
 
-
-
     public LM(LC controller) {
         this.controller = controller;
         this.objects = Collections.synchronizedList(new ArrayList<>());
